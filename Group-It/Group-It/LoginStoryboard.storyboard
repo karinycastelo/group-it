@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CC5-Xl-TLq">
+            <objects>
+                <viewController id="Hvk-cK-RKR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9iW-ac-FjF"/>
+                        <viewControllerLayoutGuide type="bottom" id="8yS-fn-ZOG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ywC-Zr-Lxd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5mg-PS-VSP">
+                                <rect key="frame" x="40" y="56" width="240" height="128"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuário" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="04y-IY-6VR">
+                                <rect key="frame" x="40" y="235" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gM-eK-nBN">
+                                <rect key="frame" x="40" y="298" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoK-00-aLN">
+                                <rect key="frame" x="88" y="419" width="145" height="30"/>
+                                <state key="normal" title="Esqueci minha senha"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="04y-IY-6VR" firstAttribute="top" secondItem="5mg-PS-VSP" secondAttribute="bottom" constant="51" id="FGr-6o-zAP"/>
+                            <constraint firstItem="3gM-eK-nBN" firstAttribute="leading" secondItem="ywC-Zr-Lxd" secondAttribute="leadingMargin" constant="20" id="Jps-qr-mok"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="04y-IY-6VR" secondAttribute="trailing" constant="20" id="NvI-HU-efN"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="leading" secondItem="ywC-Zr-Lxd" secondAttribute="leadingMargin" constant="20" id="VFB-A1-Trt"/>
+                            <constraint firstItem="04y-IY-6VR" firstAttribute="leading" secondItem="ywC-Zr-Lxd" secondAttribute="leadingMargin" constant="20" id="Vxz-ex-0YN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5mg-PS-VSP" secondAttribute="trailing" constant="20" id="ZNL-0k-KD2"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="top" secondItem="9iW-ac-FjF" secondAttribute="bottom" constant="36" id="eVE-W8-NE4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3gM-eK-nBN" secondAttribute="trailing" constant="20" id="hZT-m0-uL3"/>
+                            <constraint firstItem="8yS-fn-ZOG" firstAttribute="top" secondItem="LoK-00-aLN" secondAttribute="bottom" constant="119" id="ymz-ki-7n1"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UO2-fY-rAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="260"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.jpg" width="488" height="366"/>
+    </resources>
+</document>
