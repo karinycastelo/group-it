@@ -10,4 +10,6 @@ import UIKit
 
 class AmigosCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var amigoImage: UIImageView!
+    @IBOutlet weak var amigoNome: UILabel!
 }

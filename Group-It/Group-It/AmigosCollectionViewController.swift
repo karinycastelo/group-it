@@ -8,25 +8,23 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "amigosCell"
 
-class AmigosCollectionViewController: UICollectionViewController {
+class AmigosCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    let amigos: [String] = ["Concilio", "João", "Maria", "Matheus", "Paulo", "Suélio", "Renato", "Artur", "Ricardo", "Thiago", "Augustus"].sort { (nome1, nome2) -> Bool in
+        return nome1 < nome2
+    }
+    
+    var side: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.clearsSelectionOnViewWillAppear = false
+        
+        side = (collectionView!.frame.width - 5)/3
     }
 
     /*
@@ -42,21 +40,19 @@ class AmigosCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
-
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return amigos.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-    
-        // Configure the cell
-    
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("amigosCell", forIndexPath: indexPath) as! AmigosCollectionViewCell
+        
+        cell.amigoNome.text = amigos[indexPath.item] ?? "nul"
+        
         return cell
     }
 
@@ -90,5 +86,9 @@ class AmigosCollectionViewController: UICollectionViewController {
     
     }
     */
-
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        return CGSize(width: side, height: side)
+    }
 }

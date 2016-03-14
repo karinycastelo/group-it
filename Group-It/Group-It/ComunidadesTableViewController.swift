@@ -10,42 +10,37 @@ import UIKit
 
 class ComunidadesTableViewController: UITableViewController {
 
+    var comunidades: [Comunidade] = [Comunidade(nome: "Teste", nomeLogo: "", tipo: "Skate", numMembro: 4), Comunidade(nome: "Teste2", nomeLogo: "Academia", tipo: "", numMembro: 2)]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+         self.clearsSelectionOnViewWillAppear = false
     }
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return comunidades.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("comunidadeCell", forIndexPath: indexPath) as! ComunidadeTableViewCell
+        
+        let comunidade = comunidades[indexPath.row]
+        
+        cell.nomeComunidade.text = comunidade.nome
+        cell.imageComunidade.image = UIImage(named: comunidade.nomeLogo)
+        cell.tipo.text = comunidade.tipo
+        cell.quantidadeMembros.text = String(comunidade.numMembro) + " membros"
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

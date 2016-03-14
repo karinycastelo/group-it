@@ -12,40 +12,26 @@ class DetalheComunidadeViewController: UIViewController, UITableViewDataSource, 
 
     @IBOutlet weak var tableViewPostagem: UITableView!
     
-    var postagens: [Postagem] = []
+    var postagens: [Postagem] = [Postagem(descricao: "", data: "", hora: "")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return postagens.count
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return postagens.count
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableViewPostagem.dequeueReusableCellWithIdentifier("postagemCell", forIndexPath: indexPath) as! PostagemTableViewCell
+        let cell = tableViewPostagem.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath) as! PostagemTableViewCell
         
-        let postagem = postagens[indexPath.row]
-        
-//        cell.imageProfile.image = UIImage(named: postagem.usuario.nomeImage)
-//        cell.nameProfile.text = postagem.usuario.nome
-        cell.datePostagem.text = "\(postagem.data) - \(postagem.hora)"
-        cell.descricao.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "//postagem.descricao
+        cell.datePostagem.text = "20/03/2016"
+        cell.descricao.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
         
         return cell
     }

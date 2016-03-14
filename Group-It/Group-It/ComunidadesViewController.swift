@@ -10,28 +10,20 @@ import UIKit
 
 class ComunidadesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    
     @IBOutlet weak var comunidadeTableView: UITableView!
     
-    var comunidades: [Comunidade] = []
+    var comunidades: [Comunidade] = [Comunidade(nome: "Teste", nomeLogo: "", tipo: "Skate", numMembro: 4), Comunidade(nome: "Teste2", nomeLogo: "Academia", tipo: "", numMembro: 2)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return comunidades.count
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return comunidades.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -43,11 +35,10 @@ class ComunidadesViewController: UIViewController, UITableViewDataSource, UITabl
         cell.nomeComunidade.text = comunidade.nome
         cell.imageComunidade.image = UIImage(named: comunidade.nomeLogo)
         cell.tipo.text = comunidade.tipo
-        cell.numMembro.text = String(comunidade.numMembro)
+        cell.quantidadeMembros.text = String(comunidade.numMembro) + " membros"
         
         return cell
     }
-    
 
     /*
     // MARK: - Navigation

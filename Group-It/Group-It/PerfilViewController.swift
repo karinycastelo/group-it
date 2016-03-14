@@ -8,20 +8,53 @@
 
 import UIKit
 
-class PerfilViewController: UIViewController {
-
+class PerfilViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var perfilImage: UIImageView!
+    @IBOutlet weak var perfilNome: UILabel!
+    @IBOutlet weak var perfilInfo: UILabel!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    let atividades: [String] = ["Skate", "CrossFit", "Basquete"]
+    
+    var side: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        side = (collectionView.frame.width - 20)/3
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: UICollectionViewDataSource
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
     }
     
-
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return atividades.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("atividadesCell", forIndexPath: indexPath) as! PerfilFavoritoCollectionViewCell
+        
+        cell.atividadeIcon.image = UIImage(named: atividades[indexPath.item])
+        
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        
+        return collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "footerView", forIndexPath: indexPath) as! PerfilFavoritoFooterCollectionReusableView
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        return CGSize(width: side, height: side)
+    }
+    
     /*
     // MARK: - Navigation
 
