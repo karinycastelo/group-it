@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  EventViewController.swift
 //  Group-It
 //
 //  Created by Student on 3/14/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class EventViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +21,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var user: UITextField!
 
-    @IBOutlet weak var password: UITextField!
-    
-    @IBOutlet weak var forgotMyPass: UIButton!
-    
-    
-    
-    
     /*
     // MARK: - Navigation
 

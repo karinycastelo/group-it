@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
-    <entity name="Atividade" syncable="YES">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Atividade" representedClassName=".Atividade" syncable="YES">
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="urlImg" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="comunidades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comunidade" inverseName="atividade" inverseEntity="Comunidade" syncable="YES"/>
         <relationship name="usuarios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Usuario" inverseName="atividades" inverseEntity="Usuario" syncable="YES"/>
     </entity>
-    <entity name="Comunidade" syncable="YES">
+    <entity name="Comunidade" representedClassName=".Comunidade" syncable="YES">
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="urlImg" optional="YES" attributeType="String" syncable="YES"/>
@@ -14,13 +14,13 @@
         <relationship name="dono" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" syncable="YES"/>
         <relationship name="membros" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Usuario" inverseName="comunidades" inverseEntity="Usuario" syncable="YES"/>
     </entity>
-    <entity name="Postagem" syncable="YES">
+    <entity name="Postagem" representedClassName=".Postagem" syncable="YES">
         <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="usuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuario" syncable="YES"/>
     </entity>
-    <entity name="Usuario" syncable="YES">
+    <entity name="Usuario" representedClassName=".Usuario" syncable="YES">
         <attribute name="fotoURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="amigos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Usuario" inverseName="amigos" inverseEntity="Usuario" syncable="YES"/>
@@ -29,8 +29,8 @@
     </entity>
     <elements>
         <element name="Atividade" positionX="-27" positionY="54" width="128" height="105"/>
-        <element name="Usuario" positionX="-54" positionY="-9" width="128" height="120"/>
         <element name="Comunidade" positionX="-36" positionY="36" width="128" height="135"/>
         <element name="Postagem" positionX="-27" positionY="45" width="128" height="105"/>
+        <element name="Usuario" positionX="-54" positionY="-9" width="128" height="120"/>
     </elements>
 </model>
