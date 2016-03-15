@@ -1,5 +1,5 @@
 //
-//  Comunidade.swift
+//  Evento.swift
 //  Group-It
 //
 //  Created by Student on 3/15/16.
@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class Comunidade: NSManagedObject {
+class Evento: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 

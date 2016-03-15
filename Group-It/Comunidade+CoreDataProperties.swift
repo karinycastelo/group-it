@@ -2,7 +2,7 @@
 //  Comunidade+CoreDataProperties.swift
 //  Group-It
 //
-//  Created by Student on 3/14/16.
+//  Created by Student on 3/15/16.
 //  Copyright © 2016 HACKATRUCK. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -17,8 +17,9 @@ extension Comunidade {
     @NSManaged var descricao: String?
     @NSManaged var nome: String?
     @NSManaged var urlImg: String?
-    @NSManaged var atividade: NSManagedObject?
-    @NSManaged var dono: NSManagedObject?
+    @NSManaged var dataCriacao: NSDate?
+    @NSManaged var atividade: Atividade?
+    @NSManaged var dono: Usuario?
     @NSManaged var membros: NSSet?
 
 }

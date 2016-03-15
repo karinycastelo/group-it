@@ -1,5 +1,5 @@
 //
-//  Usuario+CoreDataProperties.swift
+//  Evento+CoreDataProperties.swift
 //  Group-It
 //
 //  Created by Student on 3/15/16.
@@ -12,12 +12,12 @@
 import Foundation
 import CoreData
 
-extension Usuario {
+extension Evento {
 
-    @NSManaged var fotoURL: String?
     @NSManaged var nome: String?
-    @NSManaged var amigos: NSSet?
-    @NSManaged var atividades: NSSet?
-    @NSManaged var comunidades: NSSet?
+    @NSManaged var data: NSDate?
+    @NSManaged var descricao: String?
+    @NSManaged var endereco: String?
+    @NSManaged var atividade: Atividade?
 
 }
