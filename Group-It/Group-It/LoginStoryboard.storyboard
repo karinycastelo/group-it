@@ -18,35 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5mg-PS-VSP">
-                                <rect key="frame" x="40" y="56" width="240" height="128"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuário" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="04y-IY-6VR">
-                                <rect key="frame" x="40" y="235" width="240" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuário" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="04y-IY-6VR">
+                                <rect key="frame" x="36" y="316" width="248" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gM-eK-nBN">
-                                <rect key="frame" x="40" y="298" width="240" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gM-eK-nBN">
+                                <rect key="frame" x="36" y="371" width="248" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoK-00-aLN">
-                                <rect key="frame" x="88" y="419" width="145" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoK-00-aLN">
+                                <rect key="frame" x="88" y="476" width="145" height="30"/>
                                 <state key="normal" title="Esqueci minha senha"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5mg-PS-VSP">
+                                <rect key="frame" x="36" y="64" width="248" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="hiM-cB-3kF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="04y-IY-6VR" firstAttribute="top" secondItem="5mg-PS-VSP" secondAttribute="bottom" constant="51" id="FGr-6o-zAP"/>
-                            <constraint firstItem="3gM-eK-nBN" firstAttribute="leading" secondItem="ywC-Zr-Lxd" secondAttribute="leadingMargin" constant="20" id="Jps-qr-mok"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="04y-IY-6VR" secondAttribute="trailing" constant="20" id="NvI-HU-efN"/>
-                            <constraint firstItem="5mg-PS-VSP" firstAttribute="leading" secondItem="ywC-Zr-Lxd" secondAttribute="leadingMargin" constant="20" id="VFB-A1-Trt"/>
-                            <constraint firstItem="04y-IY-6VR" firstAttribute="leading" secondItem="ywC-Zr-Lxd" secondAttribute="leadingMargin" constant="20" id="Vxz-ex-0YN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5mg-PS-VSP" secondAttribute="trailing" constant="20" id="ZNL-0k-KD2"/>
-                            <constraint firstItem="5mg-PS-VSP" firstAttribute="top" secondItem="9iW-ac-FjF" secondAttribute="bottom" constant="36" id="eVE-W8-NE4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3gM-eK-nBN" secondAttribute="trailing" constant="20" id="hZT-m0-uL3"/>
-                            <constraint firstItem="8yS-fn-ZOG" firstAttribute="top" secondItem="LoK-00-aLN" secondAttribute="bottom" constant="119" id="ymz-ki-7n1"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="centerX" secondItem="LoK-00-aLN" secondAttribute="centerX" id="IHu-8W-bXM"/>
+                            <constraint firstItem="04y-IY-6VR" firstAttribute="top" secondItem="5mg-PS-VSP" secondAttribute="bottom" constant="94" id="IeI-YY-S5R"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="trailing" secondItem="3gM-eK-nBN" secondAttribute="trailing" id="NN2-T9-hhL"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="trailing" secondItem="04y-IY-6VR" secondAttribute="trailing" id="Nbr-Wc-hfA"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="top" secondItem="9iW-ac-FjF" secondAttribute="bottom" constant="44" id="O1V-Th-KLc"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="leading" secondItem="04y-IY-6VR" secondAttribute="leading" id="OSg-23-Uoi"/>
+                            <constraint firstItem="LoK-00-aLN" firstAttribute="top" secondItem="3gM-eK-nBN" secondAttribute="bottom" constant="75" id="OrT-1T-47m"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="leading" secondItem="3gM-eK-nBN" secondAttribute="leading" id="P7Q-AV-5l3"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="centerX" secondItem="ywC-Zr-Lxd" secondAttribute="centerX" id="PuC-ZZ-8TE"/>
+                            <constraint firstItem="5mg-PS-VSP" firstAttribute="leading" secondItem="ywC-Zr-Lxd" secondAttribute="leadingMargin" constant="20" id="fbs-Ng-XOQ"/>
+                            <constraint firstItem="8yS-fn-ZOG" firstAttribute="top" secondItem="LoK-00-aLN" secondAttribute="bottom" constant="62" id="phq-pt-SGX"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -58,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UO2-fY-rAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15" y="260"/>
+            <point key="canvasLocation" x="3" y="260"/>
         </scene>
     </scenes>
     <resources>

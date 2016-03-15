@@ -36,6 +36,8 @@
 		3F475B0B1C9708CD002171EE /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F475B0A1C9708CD002171EE /* EventViewController.swift */; };
 		3F475B0D1C9708E0002171EE /* EventStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F475B0C1C9708E0002171EE /* EventStoryboard.storyboard */; };
 		3F475B0F1C970966002171EE /* EventosHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F475B0E1C970966002171EE /* EventosHeaderView.xib */; };
+		3FAEE5511C982BB500E4AD50 /* EventoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAEE5501C982BB500E4AD50 /* EventoTableViewController.swift */; };
+		3FAEE5531C982DC200E4AD50 /* EventoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAEE5521C982DC200E4AD50 /* EventoTableViewCell.swift */; };
 		3FDF7B491C91B5DD00054B42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF7B481C91B5DD00054B42 /* AppDelegate.swift */; };
 		3FDF7B4B1C91B5DD00054B42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF7B4A1C91B5DD00054B42 /* ViewController.swift */; };
 		3FDF7B511C91B5DD00054B42 /* Group_It.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF7B4F1C91B5DD00054B42 /* Group_It.xcdatamodeld */; };
@@ -73,6 +75,8 @@
 		3F475B0A1C9708CD002171EE /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		3F475B0C1C9708E0002171EE /* EventStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventStoryboard.storyboard; sourceTree = "<group>"; };
 		3F475B0E1C970966002171EE /* EventosHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventosHeaderView.xib; sourceTree = "<group>"; };
+		3FAEE5501C982BB500E4AD50 /* EventoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoTableViewController.swift; sourceTree = "<group>"; };
+		3FAEE5521C982DC200E4AD50 /* EventoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoTableViewCell.swift; sourceTree = "<group>"; };
 		3FDF7B451C91B5DD00054B42 /* Group-It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Group-It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDF7B481C91B5DD00054B42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FDF7B4A1C91B5DD00054B42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 				3F475B0A1C9708CD002171EE /* EventViewController.swift */,
 				3F475B0C1C9708E0002171EE /* EventStoryboard.storyboard */,
 				3F475B0E1C970966002171EE /* EventosHeaderView.xib */,
+				3FAEE5501C982BB500E4AD50 /* EventoTableViewController.swift */,
+				3FAEE5521C982DC200E4AD50 /* EventoTableViewCell.swift */,
 			);
 			name = Eventos;
 			sourceTree = "<group>";
@@ -323,11 +329,13 @@
 				2F8508641C94A166006DE3CE /* Comunidade.swift in Sources */,
 				2F8508751C94A1D0006DE3CE /* PerfilFavoritoCollectionViewCell.swift in Sources */,
 				3F475B071C97085F002171EE /* Postagem.swift in Sources */,
+				3FAEE5511C982BB500E4AD50 /* EventoTableViewController.swift in Sources */,
 				2F85086F1C94A194006DE3CE /* AmigosCollectionViewController.swift in Sources */,
 				2F8508731C94A1B7006DE3CE /* PerfilViewController.swift in Sources */,
 				3F475B081C97085F002171EE /* Usuario+CoreDataProperties.swift in Sources */,
 				2F85087B1C94BE6B006DE3CE /* ComunidadesTableViewController.swift in Sources */,
 				3F475B051C97085F002171EE /* Atividade.swift in Sources */,
+				3FAEE5531C982DC200E4AD50 /* EventoTableViewCell.swift in Sources */,
 				3F475AF51C970058002171EE /* LoginViewController.swift in Sources */,
 				2F85086B1C94A166006DE3CE /* PostagemTableViewCell.swift in Sources */,
 				3F475B031C97085F002171EE /* Comunidade.swift in Sources */,
