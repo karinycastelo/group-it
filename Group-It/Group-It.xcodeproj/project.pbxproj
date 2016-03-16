@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F8508631C94A166006DE3CE /* Comunidade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F85085A1C94A166006DE3CE /* Comunidade.storyboard */; };
-		2F8508641C94A166006DE3CE /* Comunidade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F85085B1C94A166006DE3CE /* Comunidade.swift */; };
-		2F8508661C94A166006DE3CE /* ComunidadesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F85085D1C94A166006DE3CE /* ComunidadesViewController.swift */; };
 		2F8508671C94A166006DE3CE /* ComunidadeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F85085E1C94A166006DE3CE /* ComunidadeTableViewCell.swift */; };
 		2F8508681C94A166006DE3CE /* DetalheComunidadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F85085F1C94A166006DE3CE /* DetalheComunidadeViewController.swift */; };
-		2F8508691C94A166006DE3CE /* Postagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8508601C94A166006DE3CE /* Postagem.swift */; };
 		2F85086A1C94A166006DE3CE /* Postagem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8508611C94A166006DE3CE /* Postagem.xib */; };
 		2F85086B1C94A166006DE3CE /* PostagemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8508621C94A166006DE3CE /* PostagemTableViewCell.swift */; };
 		2F85086F1C94A194006DE3CE /* AmigosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F85086E1C94A194006DE3CE /* AmigosCollectionViewController.swift */; };
@@ -22,6 +19,8 @@
 		2F8508791C94A270006DE3CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8508781C94A270006DE3CE /* Main.storyboard */; };
 		2F85087B1C94BE6B006DE3CE /* ComunidadesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F85087A1C94BE6B006DE3CE /* ComunidadesTableViewController.swift */; };
 		2F85087F1C94E186006DE3CE /* PerfilFavoritoFooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F85087E1C94E186006DE3CE /* PerfilFavoritoFooterCollectionReusableView.swift */; };
+		3F26F0851C997A5D00E877DD /* NovaPostagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F26F0841C997A5D00E877DD /* NovaPostagemViewController.swift */; };
+		3F26F0871C997A8100E877DD /* NovaComunidadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F26F0861C997A8100E877DD /* NovaComunidadeViewController.swift */; };
 		3F475AF51C970058002171EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F475AF41C970058002171EE /* LoginViewController.swift */; };
 		3F475AF71C970076002171EE /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F475AF61C970076002171EE /* LoginStoryboard.storyboard */; };
 		3F475AF91C970087002171EE /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F475AF81C970087002171EE /* logo.jpg */; };
@@ -47,11 +46,8 @@
 
 /* Begin PBXFileReference section */
 		2F85085A1C94A166006DE3CE /* Comunidade.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Comunidade.storyboard; sourceTree = "<group>"; };
-		2F85085B1C94A166006DE3CE /* Comunidade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comunidade.swift; sourceTree = "<group>"; };
-		2F85085D1C94A166006DE3CE /* ComunidadesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComunidadesViewController.swift; sourceTree = "<group>"; };
 		2F85085E1C94A166006DE3CE /* ComunidadeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComunidadeTableViewCell.swift; sourceTree = "<group>"; };
 		2F85085F1C94A166006DE3CE /* DetalheComunidadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheComunidadeViewController.swift; sourceTree = "<group>"; };
-		2F8508601C94A166006DE3CE /* Postagem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Postagem.swift; sourceTree = "<group>"; };
 		2F8508611C94A166006DE3CE /* Postagem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Postagem.xib; sourceTree = "<group>"; };
 		2F8508621C94A166006DE3CE /* PostagemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostagemTableViewCell.swift; sourceTree = "<group>"; };
 		2F85086E1C94A194006DE3CE /* AmigosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmigosCollectionViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +57,8 @@
 		2F8508781C94A270006DE3CE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2F85087A1C94BE6B006DE3CE /* ComunidadesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComunidadesTableViewController.swift; sourceTree = "<group>"; };
 		2F85087E1C94E186006DE3CE /* PerfilFavoritoFooterCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilFavoritoFooterCollectionReusableView.swift; sourceTree = "<group>"; };
+		3F26F0841C997A5D00E877DD /* NovaPostagemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovaPostagemViewController.swift; sourceTree = "<group>"; };
+		3F26F0861C997A8100E877DD /* NovaComunidadeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovaComunidadeViewController.swift; sourceTree = "<group>"; };
 		3F475AF41C970058002171EE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F475AF61C970076002171EE /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		3F475AF81C970087002171EE /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
@@ -188,13 +186,12 @@
 		3FDF7B601C91BD9000054B42 /* Comunidades */ = {
 			isa = PBXGroup;
 			children = (
+				3F26F0861C997A8100E877DD /* NovaComunidadeViewController.swift */,
+				3F26F0841C997A5D00E877DD /* NovaPostagemViewController.swift */,
 				2F85085A1C94A166006DE3CE /* Comunidade.storyboard */,
-				2F85085B1C94A166006DE3CE /* Comunidade.swift */,
 				2F85087A1C94BE6B006DE3CE /* ComunidadesTableViewController.swift */,
-				2F85085D1C94A166006DE3CE /* ComunidadesViewController.swift */,
 				2F85085E1C94A166006DE3CE /* ComunidadeTableViewCell.swift */,
 				2F85085F1C94A166006DE3CE /* DetalheComunidadeViewController.swift */,
-				2F8508601C94A166006DE3CE /* Postagem.swift */,
 				2F8508611C94A166006DE3CE /* Postagem.xib */,
 				2F8508621C94A166006DE3CE /* PostagemTableViewCell.swift */,
 			);
@@ -317,25 +314,24 @@
 			files = (
 				2F85087F1C94E186006DE3CE /* PerfilFavoritoFooterCollectionReusableView.swift in Sources */,
 				2F8508711C94A1AA006DE3CE /* AmigosCollectionViewCell.swift in Sources */,
-				2F8508661C94A166006DE3CE /* ComunidadesViewController.swift in Sources */,
 				3F475B061C97085F002171EE /* Postagem+CoreDataProperties.swift in Sources */,
 				3FDF7B4B1C91B5DD00054B42 /* ViewController.swift in Sources */,
 				2F8508671C94A166006DE3CE /* ComunidadeTableViewCell.swift in Sources */,
 				3FDF7B491C91B5DD00054B42 /* AppDelegate.swift in Sources */,
 				3F475B041C97085F002171EE /* Atividade+CoreDataProperties.swift in Sources */,
 				3F475B091C97085F002171EE /* Usuario.swift in Sources */,
-				2F8508691C94A166006DE3CE /* Postagem.swift in Sources */,
 				3F475B0B1C9708CD002171EE /* EventViewController.swift in Sources */,
-				2F8508641C94A166006DE3CE /* Comunidade.swift in Sources */,
 				2F8508751C94A1D0006DE3CE /* PerfilFavoritoCollectionViewCell.swift in Sources */,
 				3F475B071C97085F002171EE /* Postagem.swift in Sources */,
 				3FAEE5511C982BB500E4AD50 /* EventoTableViewController.swift in Sources */,
+				3F26F0851C997A5D00E877DD /* NovaPostagemViewController.swift in Sources */,
 				2F85086F1C94A194006DE3CE /* AmigosCollectionViewController.swift in Sources */,
 				2F8508731C94A1B7006DE3CE /* PerfilViewController.swift in Sources */,
 				3F475B081C97085F002171EE /* Usuario+CoreDataProperties.swift in Sources */,
 				2F85087B1C94BE6B006DE3CE /* ComunidadesTableViewController.swift in Sources */,
 				3F475B051C97085F002171EE /* Atividade.swift in Sources */,
 				3FAEE5531C982DC200E4AD50 /* EventoTableViewCell.swift in Sources */,
+				3F26F0871C997A8100E877DD /* NovaComunidadeViewController.swift in Sources */,
 				3F475AF51C970058002171EE /* LoginViewController.swift in Sources */,
 				2F85086B1C94A166006DE3CE /* PostagemTableViewCell.swift in Sources */,
 				3F475B031C97085F002171EE /* Comunidade.swift in Sources */,

@@ -10,7 +10,9 @@ import UIKit
 
 class ComunidadesTableViewController: UITableViewController {
 
-    var comunidades: [Comunidade] = [Comunidade(nome: "Teste", nomeLogo: "", tipo: "Skate", numMembro: 4), Comunidade(nome: "Teste2", nomeLogo: "Academia", tipo: "", numMembro: 2)]
+    @IBOutlet weak var comunidadeTableView: UITableView!
+    
+    var comunidades: [Comunidade] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +37,29 @@ class ComunidadesTableViewController: UITableViewController {
         let comunidade = comunidades[indexPath.row]
         
         cell.nomeComunidade.text = comunidade.nome
-        cell.imageComunidade.image = UIImage(named: comunidade.nomeLogo)
-        cell.tipo.text = comunidade.tipo
-        cell.quantidadeMembros.text = String(comunidade.numMembro) + " membros"
+        cell.imageComunidade.image = UIImage(named: comunidade.urlImg!)
+        cell.tipo.text = comunidade.atividade?.nome
+        cell.quantidadeMembros.text = String(comunidade.membros) + " membros"
 
         return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.performSegueWithIdentifier("comunidadeSegue", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "comunidadeSegue" {
+            
+            if let controller = segue.destinationViewController as? DetalheComunidadeViewController {
+//                controller.postagens = comunidades[self.comunidadeTableView.indexPathForSelectedRow!.row].
+            }
+        }
+        
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

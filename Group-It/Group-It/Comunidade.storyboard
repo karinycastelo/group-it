@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aaZ-Ew-Fz5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aft-iJ-hvb">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="UNr-BC-xYV">
             <objects>
-                <navigationController storyboardIdentifier="storID" id="aft-iJ-hvb" sceneMemberID="viewController">
+                <navigationController id="aft-iJ-hvb" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wt4-Qg-F2f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-151" y="136"/>
         </scene>
-        <!--Comunidades View Controller-->
+        <!--Comunidades Table View Controller-->
         <scene sceneID="NgF-4h-UY9">
             <objects>
-                <viewController storyboardIdentifier="comunidadeID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aaZ-Ew-Fz5" customClass="ComunidadesViewController" customModule="Group_It" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="aaZ-Ew-Fz5" customClass="ComunidadesTableViewController" customModule="Group_It" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="769-Rm-7Ba"/>
                         <viewControllerLayoutGuide type="bottom" id="ZeT-Wl-ZH2"/>
@@ -43,7 +43,7 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jrc-4c-Plj" id="NYy-4A-3fr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z4A-Dt-P66">
@@ -112,17 +112,17 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="comunidadeTableView" destination="BGh-5A-n37" id="sln-53-Qh0"/>
+                        <outlet property="comunidadeTableView" destination="BGh-5A-n37" id="PL7-jl-2Qf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6P6-WZ-75I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="233.5" y="136.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Nova Comunidade View Controller-->
         <scene sceneID="rP4-oO-J0p">
             <objects>
-                <viewController id="aRO-EF-Nv3" sceneMemberID="viewController">
+                <viewController id="aRO-EF-Nv3" customClass="NovaComunidadeViewController" customModule="Group_It" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bO4-dY-0Kg"/>
                         <viewControllerLayoutGuide type="bottom" id="0y9-1L-lmd"/>
@@ -130,9 +130,58 @@
                     <view key="view" contentMode="scaleToFill" id="otV-3h-gAz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bYs-yw-tkJ">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="145"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hux-1S-X77">
+                                <rect key="frame" x="132" y="49" width="56" height="48"/>
+                                <state key="normal" title="Button" image="ic_photo_camera_48pt_3x"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome da Comunidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAu-bM-Fv2">
+                                <rect key="frame" x="10" y="174" width="301" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OdF-hW-zi9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Le0-EE-L8Q">
+                                <rect key="frame" x="79" y="272" width="163" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oYS-XO-cIG"/>
+                                </constraints>
+                                <state key="normal" title="Adicionar Comunidade"/>
+                                <connections>
+                                    <action selector="adicionarComunidade:" destination="aRO-EF-Nv3" eventType="touchUpInside" id="0iM-9d-nSW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bYs-yw-tkJ" firstAttribute="leading" secondItem="otV-3h-gAz" secondAttribute="leadingMargin" constant="-20" id="1yc-qY-CGH"/>
+                            <constraint firstItem="Le0-EE-L8Q" firstAttribute="leading" secondItem="otV-3h-gAz" secondAttribute="leadingMargin" constant="63" id="3GH-na-ynE"/>
+                            <constraint firstItem="Hux-1S-X77" firstAttribute="leading" secondItem="otV-3h-gAz" secondAttribute="leadingMargin" constant="116" id="Bns-7M-OQx"/>
+                            <constraint firstItem="Hux-1S-X77" firstAttribute="top" secondItem="bO4-dY-0Kg" secondAttribute="bottom" constant="29" id="Mvu-8r-MA8"/>
+                            <constraint firstItem="JAu-bM-Fv2" firstAttribute="leading" secondItem="otV-3h-gAz" secondAttribute="leadingMargin" constant="-6" id="PyG-0h-CHy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bYs-yw-tkJ" secondAttribute="trailing" constant="-20" id="Q42-JO-DP1"/>
+                            <constraint firstItem="Le0-EE-L8Q" firstAttribute="top" secondItem="JAu-bM-Fv2" secondAttribute="bottom" constant="68" id="R8I-7i-XEZ"/>
+                            <constraint firstItem="0y9-1L-lmd" firstAttribute="top" secondItem="Le0-EE-L8Q" secondAttribute="bottom" constant="178" id="Wkx-PA-FAI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JAu-bM-Fv2" secondAttribute="trailing" constant="-7" id="doc-Jc-gUO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hux-1S-X77" secondAttribute="trailing" constant="116" id="fYi-nV-edY"/>
+                            <constraint firstItem="bYs-yw-tkJ" firstAttribute="centerY" secondItem="Hux-1S-X77" secondAttribute="centerY" id="hxg-3h-wh6"/>
+                            <constraint firstItem="bYs-yw-tkJ" firstAttribute="top" secondItem="otV-3h-gAz" secondAttribute="topMargin" id="jhb-Gx-B1O"/>
+                            <constraint firstItem="JAu-bM-Fv2" firstAttribute="top" secondItem="bYs-yw-tkJ" secondAttribute="bottom" constant="29" id="md5-vN-yPk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Le0-EE-L8Q" secondAttribute="trailing" constant="62" id="nyQ-bV-tRy"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="addComunidade" destination="Le0-EE-L8Q" id="IKb-u8-BR9"/>
+                        <outlet property="iconCamera" destination="Hux-1S-X77" id="rEq-QK-Qe7"/>
+                        <outlet property="imageComunidade" destination="bYs-yw-tkJ" id="3oD-nd-5Eu"/>
+                        <outlet property="nomeComunidade" destination="JAu-bM-Fv2" id="X30-Rf-xSD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jo-tA-VGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,9 +256,12 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JsY-He-n3D" id="tkF-2w-5Nc">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="o0P-2E-9ia" kind="show" identifier="detalhePostagem" id="nl6-79-Ivr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -256,24 +308,27 @@
                     <navigationItem key="navigationItem" id="Vb7-ZN-T0S">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="6AC-tn-6cI">
                             <connections>
-                                <segue destination="o0P-2E-9ia" kind="presentation" id="JLl-6o-eQe"/>
+                                <segue destination="o0P-2E-9ia" kind="show" identifier="NovaPostagem" id="JLl-6o-eQe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="tableViewPostagem" destination="Vuf-uP-J7Z" id="WAk-t8-AII"/>
+                        <outlet property="logoComunidade" destination="7dG-pT-nZO" id="x4M-bJ-Q23"/>
+                        <outlet property="nomeComunidade" destination="AIA-UZ-e2v" id="wFx-NJ-SeH"/>
+                        <outlet property="quantMembro" destination="0BE-Vm-1Bl" id="xQZ-Qi-RLn"/>
+                        <outlet property="tableViewPostagem" destination="Vuf-uP-J7Z" id="kIh-57-5jE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SkM-pz-1Is" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="615" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Nova Postagem View Controller-->
         <scene sceneID="6JB-QA-xYC">
             <objects>
-                <viewController id="o0P-2E-9ia" sceneMemberID="viewController">
+                <viewController id="o0P-2E-9ia" customClass="NovaPostagemViewController" customModule="Group_It" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UMs-Bk-1Im"/>
                         <viewControllerLayoutGuide type="bottom" id="bbs-XA-SQ5"/>
@@ -281,13 +336,71 @@
                     <view key="view" contentMode="scaleToFill" id="hra-Iq-izE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tP7-cK-FAu">
+                                <rect key="frame" x="7" y="74" width="84" height="80"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vwe-eO-BvT">
+                                <rect key="frame" x="7" y="162" width="292" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Din-bQ-GIq"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuw-4d-i9h">
+                                <rect key="frame" x="88" y="352" width="145" height="30"/>
+                                <state key="normal" title="Adicionar Postagem"/>
+                                <connections>
+                                    <action selector="adicionarPostagem:" destination="o0P-2E-9ia" eventType="touchUpInside" id="CV8-EY-MhZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-CZ-cE8">
+                                <rect key="frame" x="99" y="79" width="52" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="Bh3-pI-HFw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vwe-eO-BvT" secondAttribute="trailing" constant="5" id="3Jk-e5-Hkd"/>
+                            <constraint firstItem="Vwe-eO-BvT" firstAttribute="top" secondItem="tP7-cK-FAu" secondAttribute="bottom" constant="8" id="5ah-Le-l94"/>
+                            <constraint firstItem="Vwe-eO-BvT" firstAttribute="top" secondItem="hfm-CZ-cE8" secondAttribute="bottom" constant="57" id="BzH-tF-WrP"/>
+                            <constraint firstItem="fuw-4d-i9h" firstAttribute="leading" secondItem="hra-Iq-izE" secondAttribute="leadingMargin" constant="72" id="LC8-Qm-Ad3"/>
+                            <constraint firstItem="tP7-cK-FAu" firstAttribute="leading" secondItem="hra-Iq-izE" secondAttribute="leadingMargin" constant="-9" id="ObZ-zP-WoQ"/>
+                            <constraint firstItem="fuw-4d-i9h" firstAttribute="top" secondItem="Vwe-eO-BvT" secondAttribute="bottom" constant="62" id="U3q-pN-Vgo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fuw-4d-i9h" secondAttribute="trailing" constant="71" id="X6r-Qv-5uu"/>
+                            <constraint firstItem="hfm-CZ-cE8" firstAttribute="top" secondItem="UMs-Bk-1Im" secondAttribute="bottom" constant="15" id="eBZ-mi-LNn"/>
+                            <constraint firstItem="hfm-CZ-cE8" firstAttribute="leading" secondItem="tP7-cK-FAu" secondAttribute="trailing" constant="8" id="gJO-8C-Lpm"/>
+                            <constraint firstItem="hfm-CZ-cE8" firstAttribute="leading" secondItem="hra-Iq-izE" secondAttribute="leading" constant="99" id="h1g-g8-Zet"/>
+                            <constraint firstItem="Vwe-eO-BvT" firstAttribute="leading" secondItem="tP7-cK-FAu" secondAttribute="leading" id="o4f-3c-tsa"/>
+                            <constraint firstItem="tP7-cK-FAu" firstAttribute="top" secondItem="UMs-Bk-1Im" secondAttribute="bottom" constant="10" id="sRz-oo-4Dz"/>
+                            <constraint firstItem="Vwe-eO-BvT" firstAttribute="top" secondItem="hra-Iq-izE" secondAttribute="top" constant="162" id="zNC-ch-F0y"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="addPostagem" destination="fuw-4d-i9h" id="XHV-dc-wq2"/>
+                        <outlet property="descricaoPostagem" destination="Vwe-eO-BvT" id="JFj-Si-WBc"/>
+                        <outlet property="imagePerfil" destination="tP7-cK-FAu" id="oKg-Jn-sSZ"/>
+                        <outlet property="nomePerfil" destination="hfm-CZ-cE8" id="3Tp-WW-6Ds"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSl-0L-R9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1003" y="136"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_photo_camera_48pt_3x" width="144" height="144"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nl6-79-Ivr"/>
+    </inferredMetricsTieBreakers>
 </document>
